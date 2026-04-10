@@ -71,7 +71,9 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Covaleski\\LaravelBootstrap5\\Providers\\PackageServiceProvider"
+                "Covaleski\\LaravelBootstrap5\\Providers\\PackageServiceProvider",
+                "Covaleski\\LaravelBootstrap5\\Providers\\BladeServiceProvider",
+                "Covaleski\\LaravelBootstrap5\\Providers\\HelperServiceProvider"
             ]
         }
     },
