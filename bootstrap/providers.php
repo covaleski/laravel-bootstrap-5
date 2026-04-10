@@ -2,5 +2,5 @@
 
 return [
     App\Providers\AppServiceProvider::class,
-    App\Providers\PackageServiceProvider::class,
+    Covaleski\LaravelBootstrap5\Providers\PackageServiceProvider::class,
 ];
