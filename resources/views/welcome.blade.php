@@ -7,7 +7,9 @@
         <title>Bootstrap demo</title>
     </head>
     <body>
-        <h1>Hello, world!</h1>
+        <x-bs::alert variant="success">
+            Hello, world!
+        </x-bs::alert>
         @bootstrap_js
     </body>
 </html>

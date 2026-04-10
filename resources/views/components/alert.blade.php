@@ -1,0 +1,21 @@
+@props([
+    'variant' => 'primary',
+    'dismissible' => false,
+])
+
+@use('Illuminate\Support\Arr')
+
+<div {{ $attributes->merge([
+    'class' => Arr::toCssClasses([
+        'alert',
+        "alert-{$variant}",
+        'alert-dismissible fade show' => $dismissible,
+    ]),
+    'role' => 'alert',
+]) }}>
+    {{ $slot }}
+    @if($dismissible)
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+        </button>
+    @endif
+</div>
