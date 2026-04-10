@@ -2,6 +2,7 @@
 
 namespace Covaleski\LaravelBootstrap5\Providers;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
@@ -36,10 +37,22 @@ class BladeServiceProvider extends ServiceProvider
     {
         Blade::anonymousComponentPath("{$this->path}/components", 'bs');
         Blade::directive('bootstrap_css', function (string $expression) {
-            return view('include.css', config('bootstrap.css'));
+            $attributes = Arr::toHtmlAttributes([
+                'crossorigin' => 'anonymous',
+                'href' => config('bootstrap.css.url'),
+                'integrity' => config('bootstrap.css.hash'),
+                'rel' => 'stylesheet',
+            ]);
+            return "<link {$attributes}/>";
         });
         Blade::directive('bootstrap_js', function (string $expression) {
-            return view('include.js', config('bootstrap.js'));
+            $attributes = Arr::toHtmlAttributes([
+                'crossorigin' => 'anonymous',
+                'src' => config('bootstrap.js.url'),
+                'integrity' => config('bootstrap.js.hash'),
+                'type' => 'text/javascript',
+            ]);
+            return "<script {$attributes}></script>";
         });
     }
 }
