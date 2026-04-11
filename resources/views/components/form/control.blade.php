@@ -18,9 +18,9 @@ $id ??= uniqid('');
 @endphp
 
 @if($label)
-    <label for="{{ $id }}" class="form-label">
+    <x-bs::form.label for="{{ $id }}">
         {{ $label }}
-    </label>
+    </x-bs::form.label>
 @endif
 
 @if($type === 'textarea')
@@ -53,7 +53,7 @@ $id ??= uniqid('');
 @endif
 
 @if($help)
-<div id="{{ $id }}-help" class="form-text">
-    {{ $help }}
-</div>
+    <x-bs::form.text id="{{ $id }}-help">
+        {{ $help }}
+    </x-bs::form.text>
 @endif
