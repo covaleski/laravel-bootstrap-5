@@ -23,6 +23,16 @@
                     name="notes"
                     help="Put any arbitrary information here."/>
             </div>
+            <h2>Form Select</h2>
+            <div class="mb-2">
+                <x-bs::form.select
+                    label="Subscription"
+                    help="Select one of the available options.">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </x-bs::form.select>
+            </div>
         </main>
         @bootstrap_js
     </body>
