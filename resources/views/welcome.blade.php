@@ -14,6 +14,29 @@
             <x-bs::alert variant="success" dismissible>
                 This is an important message.
             </x-bs::alert>
+            <h2>Form Check</h2>
+            <h3>Checkboxes</h3>
+            <div class="mb-2">
+                <x-bs::form.check label="Option A" name="check-value[]"/>
+                <x-bs::form.check label="Option B" name="check-value[]"/>
+                <x-bs::form.check label="Option C" name="check-value[]" checked/>
+                <x-bs::form.check label="Option D" name="check-value[]" disabled/>
+                <x-bs::form.check label="Option E" name="check-value[]" checked disabled/>
+            </div>
+            <h3>Radios</h3>
+            <div class="mb-2">
+                <x-bs::form.check label="Option A" name="radio-value" radio/>
+                <x-bs::form.check label="Option B" name="radio-value" radio checked/>
+                <x-bs::form.check label="Option C" name="radio-value" radio disabled/>
+            </div>
+            <h3>Switches</h3>
+            <div class="mb-2">
+                <x-bs::form.check label="Option A" name="check-value[]" switch/>
+                <x-bs::form.check label="Option B" name="check-value[]" switch/>
+                <x-bs::form.check label="Option C" name="check-value[]" switch checked/>
+                <x-bs::form.check label="Option D" name="check-value[]" switch disabled/>
+                <x-bs::form.check label="Option E" name="check-value[]" switch checked disabled/>
+            </div>
             <h2>Form Control</h2>
             <div class="mb-2">
                 <x-bs::form.control

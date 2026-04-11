@@ -3,7 +3,7 @@
 (B) Create the Alert component +Components {cm:2026-04-10}
 (A) Create the Form Control component +Components +Forms {cm:2026-04-10}
 (A) Create the Form Select component +Components +Forms
-(A) Create the Form Check component +Components +Forms
+(A) Create the Form Check component +Components +Forms {cm:2026-04-11}
 (A) Create the Form Radio component +Components +Forms
 (A) Create the Form Range component +Components +Forms
 (B) Create the Accordion component +Components
