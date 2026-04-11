@@ -7,11 +7,28 @@ use Illuminate\Support\ServiceProvider;
 class PackageServiceProvider extends ServiceProvider
 {
     /**
+     * Path for Blade views.
+     */
+    protected string $path;
+
+    /**
+     * Create the service provider instance.
+     */
+    public function __construct($app)
+    {
+        $this->path = dirname(dirname(__DIR__));
+        return parent::__construct($app);
+    }
+
+    /**
      * Register services.
      */
     public function register(): void
     {
-        //
+        $this->mergeConfigFrom(
+            "{$this->path}/config/bootstrap.php",
+            'bootstrap',
+        );
     }
 
     /**
@@ -19,6 +36,8 @@ class PackageServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->publishes([
+            "{$this->path}/config/bootstrap.php" => config_path('bootstrap.php'),
+        ]);
     }
 }
