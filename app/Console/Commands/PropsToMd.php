@@ -37,7 +37,7 @@ class PropsToMd extends Command
                 $props["`{$key}`"] = match ($value) {
                     'true' => 'Present',
                     'false' => 'Absent',
-                    'null' => 'YOUR_DEFAULT_VALUE',
+                    'null' => 'None',
                     default => "`{$value}`",
                 };
             }
