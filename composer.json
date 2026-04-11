@@ -5,6 +5,13 @@
     "description": "Bootstrap 5 components for Laravel.",
     "keywords": ["laravel", "framework", "bootstrap"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Covaleski",
+            "email": "covaleski23@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.3",
         "laravel/framework": "^13.0"
