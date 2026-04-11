@@ -1,12 +1,11 @@
 (A) Create Blade directives +Utilities {cm:2026-04-10}
 (A) Create configuration file +Utilities {cm:2026-04-10}
 (B) Create the Alert component +Components {cm:2026-04-10}
-(A) Create the Form Control component +Components +Forms
-(A) Create the Form Textarea component +Components +Forms
+(A) Create the Form Control component +Components +Forms {cm:2026-04-10}
 (A) Create the Form Select component +Components +Forms
-(A) Create the Check component +Components +Forms
-(A) Create the Radio component +Components +Forms
-(A) Create the Range component +Components +Forms
+(A) Create the Form Check component +Components +Forms
+(A) Create the Form Radio component +Components +Forms
+(A) Create the Form Range component +Components +Forms
 (B) Create the Accordion component +Components
 (B) Create the Badge component +Components
 (B) Create the Breadcrumb component +Components
