@@ -53,8 +53,8 @@
 (A) Create the Form Range component +Forms @Views {cm:2026-04-11}
 (A) Create the Form Select component +Forms @Views {cm:2026-04-11}
 (C) Document the Form Control component +Forms @Docs {cm:2026-04-10}
-(C) Document the Form Check component +Forms @Docs
-(C) Document the Form Range component +Forms @Docs
-(C) Document the Form Select component +Forms @Docs
+(C) Document the Form Check component +Forms @Docs {cm:2026-04-11}
+(C) Document the Form Range component +Forms @Docs {cm:2026-04-11}
+(C) Document the Form Select component +Forms @Docs {cm:2026-04-11}
 (A) Create Blade directives +Utilities {cm:2026-04-10}
 (A) Create configuration file +Utilities {cm:2026-04-10}
