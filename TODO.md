@@ -26,7 +26,7 @@
 (B) Create the Tooltip component +Components
 (A) Create the Form Control component +Forms {cm:2026-04-10}
 (A) Create the Form Check component +Forms {cm:2026-04-11}
-(A) Create the Form Range component +Forms
+(A) Create the Form Range component +Forms {cm:2026-04-11}
 (A) Create the Form Select component +Forms {cm:2026-04-11}
 (A) Create Blade directives +Utilities {cm:2026-04-10}
 (A) Create configuration file +Utilities {cm:2026-04-10}

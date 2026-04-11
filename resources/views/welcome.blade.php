@@ -45,6 +45,15 @@
                     rows="3"
                     help="Put any arbitrary information here."/>
             </div>
+            <h2>Form Range</h2>
+            <div class="mb-2">
+                <x-bs::form.range
+                    label="Volume"
+                    min="0"
+                    max="100"
+                    step="20"
+                    value="20"/>
+            </div>
             <h2>Form Select</h2>
             <div class="mb-2">
                 <x-bs::form.select
