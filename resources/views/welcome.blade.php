@@ -14,6 +14,15 @@
             <x-bs::alert variant="success" dismissible>
                 This is an important message.
             </x-bs::alert>
+            <h2>Form Control</h2>
+            <div class="mb-2">
+                <x-bs::form.control
+                    label="Notes"
+                    type="textarea"
+                    rows="3"
+                    name="notes"
+                    help="Put any arbitrary information here."/>
+            </div>
         </main>
         @bootstrap_js
     </body>
