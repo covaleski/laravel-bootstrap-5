@@ -30,6 +30,3 @@
 (B) Create the Tab (for Navs) component +Components
 (B) Create the Toast component +Components
 (B) Create the Tooltip component +Components
-(C) Create the Column Container component +Components +Layout
-(C) Create the Layout Container component +Components +Layout
-(C) Create the Row Container component +Components +Layout
