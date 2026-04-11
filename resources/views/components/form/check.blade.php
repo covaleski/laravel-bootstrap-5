@@ -5,7 +5,6 @@
     'label' => '',
     'radio' => false,
     'switch' => false,
-    'value' => null,
 ])
 
 @use('Illuminate\Support\Arr')
