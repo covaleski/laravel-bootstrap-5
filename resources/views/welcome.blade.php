@@ -7,9 +7,14 @@
         <title>Bootstrap demo</title>
     </head>
     <body>
-        <x-bs::alert variant="success">
-            Hello, world!
-        </x-bs::alert>
+        <main class="container">
+            <h1>Components</h1>
+            <p>See some of the available components.</p>
+            <h2>Alert</h2>
+            <x-bs::alert variant="success" dismissible>
+                This is an important message.
+            </x-bs::alert>
+        </main>
         @bootstrap_js
     </body>
 </html>
