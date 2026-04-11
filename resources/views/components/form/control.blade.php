@@ -22,6 +22,7 @@ $id ??= uniqid('');
         {{ $label }}
     </label>
 @endif
+
 @if($type === 'textarea')
     <textarea {{ $attributes->merge([
         'id' => $id,
@@ -50,6 +51,7 @@ $id ??= uniqid('');
         'aria-describedby' => $help ? "{$id}-help" : null,
     ]) }}/>
 @endif
+
 @if($help)
 <div id="{{ $id }}-help" class="form-text">
     {{ $help }}
