@@ -21,6 +21,8 @@ Bootstrap reference: <https://getbootstrap.com/docs/5.3/components/alerts>.
 
 ## Form Control
 
+Bootstrap reference: <https://getbootstrap.com/docs/5.3/forms/form-control/>.
+
 ### Example
 
 ```html
@@ -39,7 +41,9 @@ Bootstrap reference: <https://getbootstrap.com/docs/5.3/components/alerts>.
 | Attribute | Default | Description |
 | --- | --- | --- |
 | `disabled` | Absent | Disables field input. |
+| `help` | None | Sets the field help text. |
 | `id` | Generated | Sets the field ID. |
+| `label` | None | Set the field label. |
 | `large` | Absent | Makes the field larger. |
 | `plaintext` | Absent | foobar |
 | `readonly` | Absent | Makes the field content read-only. |
