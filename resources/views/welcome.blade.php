@@ -20,7 +20,6 @@
                     label="Notes"
                     type="textarea"
                     rows="3"
-                    name="notes"
                     help="Put any arbitrary information here."/>
             </div>
             <h2>Form Select</h2>
