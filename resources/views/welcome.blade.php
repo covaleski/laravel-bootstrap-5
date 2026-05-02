@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        @bootstrap_css_preload
         @bootstrap_css
         <title>Bootstrap demo</title>
     </head>
