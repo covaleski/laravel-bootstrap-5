@@ -2,7 +2,6 @@
 
 namespace Covaleski\LaravelBootstrap5\Providers;
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
 
 class HelperServiceProvider extends ServiceProvider
@@ -20,12 +19,6 @@ class HelperServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Arr::macro('toHtmlAttributes', function ($values) {
-            return collect($values)
-                ->whereNotNull()
-                ->map(fn ($value, $key) => sprintf('%s="%s"', $key, htmlspecialchars(strval($value))))
-                ->values()
-                ->join(' ');
-        });
+        //
     }
 }
