@@ -52,7 +52,7 @@ If you also intend to use Bootstrap's JavaScript features, also include the
 Then use published views as regular Laravel components:
 
 ```html
-<x-bs::alert color="primary">
+<x-bs::alert primary>
     A simple primary alert—check it out!
 </x-bs::alert>
 ```
