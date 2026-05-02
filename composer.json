@@ -29,7 +29,10 @@
     "autoload": {
         "psr-4": {
             "Covaleski\\LaravelBootstrap5\\": "custom/"
-        }
+        },
+        "files": [
+            "custom/functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

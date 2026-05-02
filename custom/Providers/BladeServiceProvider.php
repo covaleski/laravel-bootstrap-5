@@ -44,5 +44,14 @@ class BladeServiceProvider extends ServiceProvider
         Blade::directive('bootstrap_js', function (string $expression) {
             return "<script <?= (new \\Illuminate\\View\\ComponentAttributeBag())->merge(array_replace(config('bootstrap.js'), {$expression})) ?>></script>";
         });
+        Blade::directive('variant', function ($expression) {
+            return <<<PHP
+                <?php {$expression} = array_search(
+                    true,
+                    compact(config('bootstrap.variants.available')),
+                    true,
+                ) ?: config('bootstrap.variants.default'); ?>
+                PHP;
+        });
     }
 }

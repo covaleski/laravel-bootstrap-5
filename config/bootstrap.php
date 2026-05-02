@@ -37,4 +37,36 @@ return [
         'defer' => true,
     ],
 
+    /*
+     |--------------------------------------------------------------------------
+     | Variants
+     |--------------------------------------------------------------------------
+     |
+     | This option specifies the default theme color variants used by Bootstrap.
+     | Change this if you add or remove any theme colors when customizing
+     | Bootstrap's stylesheets.
+     |
+     | default: fallback variant when none is specified in a component.
+     |
+     | available: available color variants for the Bootstrap stylesheet in use.
+     |
+     */
+
+    'variants' => [
+
+        'default' => 'primary',
+
+        'available' => [
+            'primary',
+            'secondary',
+            'success',
+            'danger',
+            'warning',
+            'info',
+            'light',
+            'dark',
+        ],
+
+    ],
+
 ];

@@ -1,12 +1,11 @@
 @props([
-    'variant' => 'primary',
     'dismissible' => false,
+    ...variants(),
 ])
-
-@use('Illuminate\Support\Arr')
+@variant($variant)
 
 <div {{ $attributes->merge([
-    'class' => Arr::toCssClasses([
+    'class' => \Illuminate\Support\Arr::toCssClasses([
         'alert',
         "alert-{$variant}",
         'alert-dismissible fade show' => $dismissible,
