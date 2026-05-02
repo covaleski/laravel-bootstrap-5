@@ -15,6 +15,31 @@
             <x-bs::alert variant="success" dismissible>
                 This is an important message.
             </x-bs::alert>
+            <h2>Button</h2>
+            <div class="mb-2">
+                <h3>Filled</h3>
+                <div>
+                    <x-bs::button primary>primary</x-bs::button>
+                    <x-bs::button secondary>secondary</x-bs::button>
+                    <x-bs::button success>success</x-bs::button>
+                    <x-bs::button danger>danger</x-bs::button>
+                    <x-bs::button warning>warning</x-bs::button>
+                    <x-bs::button info>info</x-bs::button>
+                    <x-bs::button light>light</x-bs::button>
+                    <x-bs::button dark>dark</x-bs::button>
+                </div>
+                <h3>Outlined</h3>
+                <div>
+                    <x-bs::button primary outline>primary</x-bs::button>
+                    <x-bs::button secondary outline>secondary</x-bs::button>
+                    <x-bs::button success outline>success</x-bs::button>
+                    <x-bs::button danger outline>danger</x-bs::button>
+                    <x-bs::button warning outline>warning</x-bs::button>
+                    <x-bs::button info outline>info</x-bs::button>
+                    <x-bs::button light outline>light</x-bs::button>
+                    <x-bs::button dark outline>dark</x-bs::button>
+                </div>
+            </div>
             <h2>Form Check</h2>
             <h3>Checkboxes</h3>
             <div class="mb-2">
