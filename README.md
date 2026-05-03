@@ -46,6 +46,11 @@ templates:
 
 See all available components in [Components](./COMPONENTS.md).
 
+### Icons
+
+Use the `@bootstrap_icons` and the `@bootstrap_icons_preload` directives just
+like the CSS directives to add Bootstrap's icon library to your application.
+
 ## Configuration
 
 By default, Bootstrap assets are loaded via CDN. You can change it in the

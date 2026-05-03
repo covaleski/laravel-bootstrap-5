@@ -41,6 +41,12 @@ class BladeServiceProvider extends ServiceProvider
         Blade::directive('bootstrap_css_preload', function (string $expression) {
             return "<link <?= (new \\Illuminate\\View\\ComponentAttributeBag())->merge(array_replace(config('bootstrap.css'), ['rel' => 'preload', 'as' => 'style'], {$expression})) ?>/>";
         });
+        Blade::directive('bootstrap_icons', function (string $expression) {
+            return "<link <?= (new \\Illuminate\\View\\ComponentAttributeBag())->merge(array_replace(config('bootstrap.icons'), {$expression})) ?>/>";
+        });
+        Blade::directive('bootstrap_icons_preload', function (string $expression) {
+            return "<link <?= (new \\Illuminate\\View\\ComponentAttributeBag())->merge(array_replace(config('bootstrap.icons'), ['rel' => 'preload', 'as' => 'style'], {$expression})) ?>/>";
+        });
         Blade::directive('bootstrap_js', function (string $expression) {
             return "<script <?= (new \\Illuminate\\View\\ComponentAttributeBag())->merge(array_replace(config('bootstrap.js'), {$expression})) ?>></script>";
         });

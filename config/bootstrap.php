@@ -22,6 +22,21 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Icons Link Element Attributes
+    |--------------------------------------------------------------------------
+    |
+    | This option defines the default Bootstrap icons link attributes.
+    |
+    */
+
+    'icons' => [
+        'rel' => 'stylesheet',
+        'href' => 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css',
+        'crossorigin' => 'anonymous',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | JS Script Element Attributes
     |--------------------------------------------------------------------------
     |
