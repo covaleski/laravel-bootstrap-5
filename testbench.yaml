@@ -6,8 +6,6 @@ env:
 
 providers:
   - Workbench\App\Providers\WorkbenchServiceProvider
-  - Covaleski\LaravelBootstrap5\Providers\BladeServiceProvider
-  - Covaleski\LaravelBootstrap5\Providers\HelperServiceProvider
   - Covaleski\LaravelBootstrap5\Providers\PackageServiceProvider
 
 migrations:
